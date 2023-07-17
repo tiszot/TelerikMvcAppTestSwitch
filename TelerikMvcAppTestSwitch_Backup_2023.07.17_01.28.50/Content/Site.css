@@ -1,0 +1,16 @@
+﻿
+body {
+    background-color:lavenderblush !important;
+}
+
+.row-2 {
+    width: 500px;
+    margin-left: 10%;
+}
+
+.footer {
+    position:absolute;
+    bottom:0px;
+}
+/* Insert custom css here. */
+

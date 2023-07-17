@@ -1,0 +1,27 @@
+﻿@model TelerikMvcAppTestSwitch.Models.SwitchTestViewModel
+@{
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <script src="@Url.Content("~/Scripts/app.js")"></script>
+
+</head>
+<body>
+        <div class="row row-2">
+            <div class="col-md-2">
+                @(Html.Kendo().Switch().Name("randomName"))
+            </div>
+            <div class="col-md-6">
+                @(Html.Kendo().TextBoxFor(model => model.someString))
+            </div>
+            <div class="col-md-4">
+                <button id="button" onclick="runAction(400,200)"> add New </button>
+            </div>
+        </div>
+    </body>
+</html>

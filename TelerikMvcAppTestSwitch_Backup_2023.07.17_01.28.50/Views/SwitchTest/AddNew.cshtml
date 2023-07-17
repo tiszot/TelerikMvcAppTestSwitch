@@ -1,0 +1,27 @@
+﻿@model TelerikMvcAppTestSwitch.Models.SwitchTestViewModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>AddNew</title>
+</head>
+<body>
+    <div class="row">
+        <div class="col-md-2">
+            @(Html.Kendo().SwitchFor(model=>model.someBool))
+        </div>
+        <div class="col-md-6">
+            @(Html.Kendo().TextBoxFor(model=>model.someString))
+        </div>
+        <div class="col-md-4">
+            <button id="bExit" onclick='@Url.Action("Index", "SwitchTest")'> exit </button>
+        </div>
+
+    </div>
+</body>
+</html>
